@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat,sans-serif;
+}
+
+body {
+    background-color: #181D31;
+}
+
+/*--- estilos para el logo y el menu ---*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.menu-boton {
+    display: flex;
+    list-style-type: none;
+}
+
+.boton {
+    background-color: #F0E9D2;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 3px #678983;
+}
+
+.boton a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/*--- estilos para el header y el titulo principal ---*/
+header {
+    background-image: url("./assets/imagenes/codigo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: top;
+    height: 500px;
+}
+
+.titulo {
+    text-align: center;
+    color:  #EEEEEE;
+    font-size: 56px;
+    margin: 4% auto;
+    padding: 12%;
+    text-shadow: 2px 2px gray, 6px 6px black;
+}
+
+/*--- estilos para el contenido principal (cards) ---*/
+.principal h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #678983;
+}
+
+.contenedor {
+    display: flex;
+    width: 85%;
+    margin: 15% auto;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #E6DDC4;
+    border: 4px solid #678983;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card a {
+    width: 25%;
+    color: #E6DDC4;
+    text-decoration: none;
+    background-color: #181D31;
+    padding: 10px 35px;
+    border-radius: 10px;
+    box-shadow: 2px 3px #678983;
+    margin: 5% auto;
+}
+
+/*--- estilos para el footer ---*/
+footer {
+    background-color: #678983;
+    padding: 4% 0;
+}
+
+.pie-de-pagina {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo-end {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-end h3 {
+    width: 150px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo-end img {
+    width: 110px;
+}
+
+/*--- SECCION HISTORIA ---*/
+
+.principal {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% auto;
+}
+
+.info h2 {
+    width: 55%;
+    font-size: 40px;
+    color: #678983;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+}
+
+.info p {
+    width: 40%;
+    color: #E6DDC4;
+    padding: 10px;
+}
+
+.info-tres h2 {
+    width: 30%;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px black;
+}
+
+.info-tres p {
+    width: 70%;
+}
+
+.info:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.video-historia {
+    margin: 17% 0 10% 0;
+}
+
+.video-historia h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #678983;
+}
+
+.menu-video {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.barra {
+    display: flex;
+    background-color:  #1d1d1d;
+    justify-content: space-between;
+    align-items: end;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-video {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 3px #678983;
+    margin: 7px;
+}
+
+.boton-video:active {
+    transform: translate(3px,3px);
+    box-shadow: none;
+}
+
+.reloj {
+    color: #E6DDC4;
+    padding-right: 15px;
+}
+
+/*--- SECCION JUGUEMOS ---*/
+.juego {
+    margin-top: 10%;
+}
+
+.contenedor-juego {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-juego {
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+}
+
