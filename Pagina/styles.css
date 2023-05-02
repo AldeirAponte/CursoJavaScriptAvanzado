@@ -10,6 +10,7 @@ body {
 
 /*--- estilos para el logo y el menu ---*/
 nav {
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,11 +20,12 @@ nav {
 .menu-boton {
     display: flex;
     list-style-type: none;
+    gap: 5px;
 }
 
 .boton {
     background-color: #F0E9D2;
-    margin: 25px;
+    margin: 24px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 3px #678983;
@@ -32,21 +34,58 @@ nav {
 .boton a {
     text-decoration: none;
     color: black;
+    padding: 10px 0;
 }
 
 .logo {
-    background-color: aliceblue;
-    padding: 30px;
-    border-radius: 10px;
+    width: 200px;
+    height: 87px;
+}
+
+.logo:hover, .boton {
+    cursor: pointer;
+}
+
+rect, polygon {
+    animation: ease-in 2s;
+    animation-name: logotipo;
+    animation-iteration-count: 1;
+}
+
+/* Animacion logo */
+
+@keyframes logotipo {
+    0%{
+        transform: translate(0,-10px);
+        opacity: 0;
+    }
+    25%{
+        transform: translate(0,-10px);
+        opacity: 0;
+    }
+    50%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    75%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
 }
 
 /*--- estilos para el header y el titulo principal ---*/
 header {
+    background: 50% 0;
     background-image: url("./assets/imagenes/codigo.jpg");
     background-attachment: fixed;
     background-size: cover;
     display: flex;
-    justify-content: top;
+    align-items: center;
+    justify-content: center;
     height: 500px;
 }
 
@@ -54,8 +93,6 @@ header {
     text-align: center;
     color:  #EEEEEE;
     font-size: 56px;
-    margin: 4% auto;
-    padding: 12%;
     text-shadow: 2px 2px gray, 6px 6px black;
 }
 
@@ -68,9 +105,11 @@ header {
 
 .contenedor {
     display: flex;
-    width: 85%;
+    width: 90%;
+    min-height: 100%;
     margin: 15% auto;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .card {
@@ -92,6 +131,7 @@ header {
 
 .card a {
     width: 25%;
+    min-width: 30%;
     color: #E6DDC4;
     text-decoration: none;
     background-color: #181D31;
@@ -109,14 +149,14 @@ footer {
 
 .pie-de-pagina {
     width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
 }
 
 .logo-end {
     width: 25%;
+}
+
+.pie-logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,11 +190,7 @@ footer {
 
 .info h2 {
     width: 55%;
-    font-size: 40px;
     color: #678983;
-    text-align: center;
-    text-shadow: 2px 2px black;
-    padding: 10px;
 }
 
 .info p {
@@ -165,6 +201,9 @@ footer {
 
 .info-tres h2 {
     width: 30%;
+}
+
+.info-ambos h2 {
     font-size: 40px;
     text-align: center;
     padding: 10px;
@@ -237,15 +276,42 @@ footer {
     margin-top: 10%;
 }
 
+.contenedor-zona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zona-juego {
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.imagen {
+    width: 270px;
+    height: 400px;
+    background-color: gray;
+    color: #E6DDC4;
+    border: 1px solid black;
+}
+
+.imagen:hover {
+    background-color: #141417;
+}
+
 .contenedor-juego {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
 .img-juego {
-    width: 270px;
-    height: 400px;
-    margin: 10px;
+    border: none;
+}
+
+.boton-juego {
+    margin: 3% 0 10% 0;
+    width: 20%;
 }
 

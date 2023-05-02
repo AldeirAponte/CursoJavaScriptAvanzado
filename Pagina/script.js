@@ -25,4 +25,7 @@ const duracionVideo =()=> {
     duracion.textContent = "Duración Video: " + video.duration.toFixed(0);
 }
 
-duracionVideo();
+setTimeout(()=> {
+    duracionVideo();
+},4000);
+
